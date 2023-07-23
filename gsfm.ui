@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>356</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>356</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>356</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GoldSrc-Fix</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>331</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>专业模式（正版 且 非自定义库文件夹）</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>53</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>游戏名称：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="game_list">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s_game">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>扫描所有库文件夹（时间较长）</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="run_b">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>50</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始修补</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>331</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>自定义模式（非正版 或 自定义库文件夹）</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>游戏路径：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="game_f">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="open_f">
+     <property name="geometry">
+      <rect>
+       <x>284</x>
+       <y>20</y>
+       <width>37</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="run_z">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>311</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始修补</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="jcyj">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>基础模式 一键修复（修复Half-Life）</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>356</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="log"/>
+  <action name="action">
+   <property name="text">
+    <string>官网</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
