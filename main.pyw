@@ -29,6 +29,7 @@ class MainWindow(QMainWindow):      #主界面
         self.ui.run_z.clicked.connect(self.rz)
         self.ui.jcyj.clicked.connect(self.jcyj)
         self.ui.open_f.clicked.connect(self.open_f)
+        self.ui.ky.triggered.connect(self.ky)
     
     def fff(self):
         global gl,glt
@@ -62,6 +63,9 @@ class MainWindow(QMainWindow):      #主界面
             self.ui.log.showMessage(self.ui.game_f.text()+'被修复',5000)
         else:
             self.ui.log.showMessage(self.ui.game_f.text()+'非金源引擎游戏',5000)
+    
+    def ky(self):
+        os.system("start https://github.com/lidongxun967/GoldSrc-Fix")
 
 if __name__ == '__main__':
     app = QApplication([])

@@ -206,14 +206,14 @@
     <property name="title">
      <string>关于</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="ky"/>
    </widget>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="log"/>
-  <action name="action">
+  <action name="ky">
    <property name="text">
-    <string>官网</string>
+    <string>开源地址</string>
    </property>
   </action>
  </widget>

@@ -32,8 +32,8 @@ class Ui_MainWindow(object):
         MainWindow.setDockNestingEnabled(False)
         MainWindow.setDockOptions(QMainWindow.AllowTabbedDocks|QMainWindow.AnimatedDocks)
         MainWindow.setUnifiedTitleAndToolBarOnMac(False)
-        self.action = QAction(MainWindow)
-        self.action.setObjectName(u"action")
+        self.ky = QAction(MainWindow)
+        self.ky.setObjectName(u"ky")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.groupBox = QGroupBox(self.centralwidget)
@@ -87,7 +87,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.log)
 
         self.menubar.addAction(self.menu.menuAction())
-        self.menu.addAction(self.action)
+        self.menu.addAction(self.ky)
 
         self.retranslateUi(MainWindow)
 
@@ -96,7 +96,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"GoldSrc-Fix", None))
-        self.action.setText(QCoreApplication.translate("MainWindow", u"\u5b98\u7f51", None))
+        self.ky.setText(QCoreApplication.translate("MainWindow", u"\u5f00\u6e90\u5730\u5740", None))
         self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"\u4e13\u4e1a\u6a21\u5f0f\uff08\u6b63\u7248 \u4e14 \u975e\u81ea\u5b9a\u4e49\u5e93\u6587\u4ef6\u5939\uff09", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u6e38\u620f\u540d\u79f0\uff1a", None))
         self.s_game.setText(QCoreApplication.translate("MainWindow", u"\u626b\u63cf\u6240\u6709\u5e93\u6587\u4ef6\u5939\uff08\u65f6\u95f4\u8f83\u957f\uff09", None))
