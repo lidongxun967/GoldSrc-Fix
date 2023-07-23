@@ -6,7 +6,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtWidgets import QFileDialog
 
 from gsfm_ui import Ui_MainWindow
-import sys,os,thedll,FixLib
+import os,thedll,FixLib
 from base64 import b64decode
 
 gl = glt = None
